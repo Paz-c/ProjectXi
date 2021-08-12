@@ -1,11 +1,9 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View, StyleSheet, Text, Image, TouchableOpacity} from 'react-native';
-//import Icon from 'react-native-vector-icons/Ionicons'
 
 const HomeMenus = props => {
   const navigation = useNavigation();
-  
 
   return (
     <TouchableOpacity onPress={() => navigation.navigate(props.screen)}>
@@ -14,7 +12,7 @@ const HomeMenus = props => {
         <View>
           <Text style={styles.text}>{props.title}</Text>
         </View>
-        
+      
       </View>
     </TouchableOpacity>
   );

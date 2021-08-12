@@ -10,12 +10,13 @@ import {
 } from 'react-native';
 import HomeMenuList from '../../HomeMenuList';
 
+
 const HomeScreen = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" />
-      <Text style={styles.logo}>Project-X</Text>
+      <Text style={styles.logo}>Project-Xi</Text>
       <HomeMenuList />
     </SafeAreaView>
   );
