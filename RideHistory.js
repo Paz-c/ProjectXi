@@ -4,10 +4,7 @@ import {SafeAreaView, Text} from 'react-native';
 const RideHistory = () => {
   return (
     <SafeAreaView>
-      <Text>
-        RideHistory
-        
-      </Text>
+      <Text>RideHistory</Text>
     </SafeAreaView>
   );
 };
