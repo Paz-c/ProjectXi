@@ -21,10 +21,11 @@ const HomeMenus = props => {
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'whitesmoke',
-    width: 150,
+    width: 160,
     height: 200,
     marginTop: 40,
-    marginLeft: 20,
+    marginLeft: 12,
+    marginRight: 20,
     padding: 5,
   },
   title: {
