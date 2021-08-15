@@ -6,7 +6,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './src/screens/HomeScreen';
 import MapScreen from './src/screens/MapScreen';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import RideHistory from './RideHistory';
+import RideHistory from './src/components/RideHistory';
 
 const Stack = createStackNavigator();
 

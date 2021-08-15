@@ -8,15 +8,34 @@ import {
   StatusBar,
   View,
 } from 'react-native';
-import HomeMenuList from '../../HomeMenuList';
+import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
+import HomeMenuList from '../components/HomeMenuList';
+import {API_KEY} from '@env';
 
 
 const HomeScreen = () => {
   const navigation = useNavigation();
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="light-content" />
       <Text style={styles.logo}>Project-Xi</Text>
+      <GooglePlacesAutocomplete
+        styles={{
+          container: {
+            flex: 0,
+            margin: 12
+          },
+        }}
+        placeholder="Where From?"
+        returnKeyType={'search'}
+        nearbyPlacesAPI="GooglePlacesSearch"
+        debounce={400}
+        query={{
+          key: API_KEY,
+          language: 'en',
+        }}
+        minLength={2}
+        enablePoweredByContainer={false}
+      />
       <HomeMenuList />
     </SafeAreaView>
   );
@@ -25,12 +44,13 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'gray',
+    backgroundColor: 'black',
   },
   logo: {
     fontSize: 50,
     color: 'white',
-    marginTop: 40,
+    margin: 40,
+    marginLeft: 20,
   },
 });
 
