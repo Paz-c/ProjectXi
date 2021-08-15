@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList, SafeAreaView, Text} from 'react-native';
 import HomeMenus from './HomeMenus';
-import Car from './src/assets/car.png';
+import Car from '../assets/car.png';
 
 const HomeMenuList = () => {
   const data = [

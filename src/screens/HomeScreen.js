@@ -9,8 +9,9 @@ import {
   View,
 } from 'react-native';
 import {GooglePlacesAutocomplete} from 'react-native-google-places-autocomplete';
-import HomeMenuList from '../../HomeMenuList';
+import HomeMenuList from '../components/HomeMenuList';
 import {API_KEY} from '@env';
+
 
 const HomeScreen = () => {
   const navigation = useNavigation();
